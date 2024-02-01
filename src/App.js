@@ -2,13 +2,59 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'react-bootstrap/Image';
-import { Nav,Navbar,Container,Row,Col } from 'react-bootstrap';
-import ImageCards from './ImageCards';
+import { Nav,Container,Row,Col } from 'react-bootstrap';
+import "bootstrap-icons/font/bootstrap-icons.css";
 import { useState } from 'react';
+import Navbar from './Componenents/Navbar';
+import AddTask from './Componenents/AddTask';
+import TaskList from './Componenents/TaskList';
 
 
 function App() {
-  const [menu]=useState([1,2,3,4,5,6])
+return(
+  <Container>
+  <Navbar/>
+  <Row className='justify-content-md-center'>
+    <Col lg="6">
+     <AddTask/>
+     <TaskList/>
+
+    </Col>
+  </Row>
+ 
+  </Container>
+)
+
+
+ 
+}
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/**  const [menu]=useState([1,2,3,4,5,6])
   return (
     <div className="App">
       
@@ -33,42 +79,15 @@ function App() {
                  <ImageCards />
                  <ImageCards />
                  <ImageCards />
-                 <ImageCards />
-                 <ImageCards />
-                 <ImageCards />
-                 <ImageCards />
-                 <ImageCards />
-                 <ImageCards />
-                 <ImageCards />
-                 <ImageCards />
-                 <ImageCards />
-                 <ImageCards />
-                 <ImageCards />
-                 <ImageCards />
+               
                   
                   </div> 
            
-           
-
-           
-            
               </Col>
-
             )
-            
 
           })}
           
-        </Row>
-        
-        
-      
-      
-      
-   
-      
+        </Row>  
     </div>
-  );
-}
-
-export default App;
+  ); */}
